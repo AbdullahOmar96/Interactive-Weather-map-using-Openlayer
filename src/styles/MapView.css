@@ -1,0 +1,247 @@
+
+
+.map-wrapper {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-bottom: 10px;
+
+
+}
+
+.controls {
+  
+position: relative;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+
+  background-color: rgb(170, 162, 162);
+  border-top: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+  padding-right: 0px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  
+  
+  
+
+  
+
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  
+  border-radius: 10px;
+  
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+  padding: 10px;
+  
+
+  margin-bottom: 10px;
+    
+  border: 1px solid #ccc;
+  
+  border-radius: 10px;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.controls label {
+  margin-right: 10px;   
+  
+ 
+display: inline;
+
+}
+
+.controls input[type="text"] {
+  width: 200px;
+
+  display: inline;  
+  
+  padding: 5px;
+
+    
+  border: 1px solid #ccc;
+  
+  border-radius: 10px;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  margin: 5px;
+  
+  padding: 5px;
+    
+  border: 1px solid #ccc;
+  
+  border-radius: 10px;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.controls input[type="radio"] {
+  margin-right: 5px; 
+  
+  display: inline;
+
+  border: 1px solid #ccc;
+  
+  border-radius: 10px;
+
+  justify-items: end;
+  
+  
+
+}
+
+.popup {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  background-color: rgb(145, 145, 145);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.qq{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qq img{
+  width: 70%;
+  height: 70%;
+  padding: 0%;
+ 
+  margin: 0%;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.2/css/weather-icons.min.css);
+
+/* body {
+	background: linear-gradient(90deg, #7474BF 10%, #348AC7 90%);
+} */
+#weather_wrapper {
+	width: 200px;
+	margin: 100px auto;
+}
+
+.weatherCard {
+	width: 400px;
+	height: 200px;
+	font-family: 'Open Sans';
+	position: relative;
+	transform: scale(0.7); /* Scale down all elements to 60% */
+	transform-origin: top left; /* Maintain position from top left corner */
+}
+
+.currentTemp {
+	width: 220px;
+	height: 260px;
+	background: rgb(41, 41, 41);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  /* border-radius: 25px; */
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.currentWeather {
+	width: 180px;
+	height: 260px;
+	background: rgb(237, 237, 237);
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  justify-items: end;
+	align-items: center;
+  /* border-radius: 25px; */
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+}
+
+.temp {
+	font-size: 48px; /* Adjust font size accordingly */
+	text-align: center;
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+	margin-top: 12px; /* Adjust margin accordingly */
+}
+
+.location {
+	font-size: 18px; /* Adjust font size accordingly */
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 6px; /* Adjust margin accordingly */
+}
+
+.conditions {
+	font-size: 48px; /* Adjust font size accordingly */
+	display: block;
+	padding-top: 10px; /* Adjust padding accordingly */
+	/* text-align: center; */
+}
+
+.info {
+	width: 100%; /* Adjust width accordingly */
+	height: 100px; /* Adjust height accordingly */
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: rgb(42, 178, 234);
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+  border-bottom-right-radius: 25px;
+
+  
+
+}
+
+.rain,
+.wind {
+	font-size: 12px; /* Adjust font size accordingly */
+}
+
